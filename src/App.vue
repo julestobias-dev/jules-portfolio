@@ -7,7 +7,13 @@
           <h3>Software Engineer</h3>
         </div>
         <div class="menu-list-wrapper">
-          <div class="menu-wrapper" v-for="(menu, index) in links" :key="index">
+          <div
+            class="menu-wrapper"
+            v-for="(menu, index) in links"
+            :key="index"
+            @click="handleClickComponent(menu.component)"
+            :class="{ clicked: activeComponent == menu.component }"
+          >
             <div class="horizontal"></div>
             <p class="menu-label">{{ menu.label }}</p>
           </div>
@@ -25,18 +31,27 @@
         </div>
       </div>
     </div>
+    <div class="main-right">
+      <component :is="activeComponent"></component>
+    </div>
   </div>
 </template>
 
 <script>
+import MainAbout from "./components/MainAbout.vue";
+
 export default {
   name: "App",
+  components: {
+    MainAbout,
+  },
   data() {
     return {
+      activeComponent: "MainAbout",
       links: [
         {
           label: "ABOUT",
-          component: "about",
+          component: "MainAbout",
         },
         {
           label: "EXPERIENCE",
@@ -60,6 +75,11 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    handleClickComponent(component) {
+      this.activeComponent = component;
+    },
   },
 };
 </script>

@@ -2,6 +2,7 @@
   background-color: rgb(15 23 42);
   height: 100vh;
   display: flex;
+  padding: 0 100px;
 
   .main-left {
     width: 40%;
@@ -42,10 +43,11 @@
           gap: 10px;
           cursor: pointer;
 
-          &:hover {
+          &:hover,
+          &.clicked {
             .horizontal {
               width: 60px;
-              color: $primary-color;
+              background-color: $primary-color;
             }
 
             .menu-label {
@@ -55,7 +57,7 @@
 
           .horizontal {
             width: 30px;
-            height: 1px;
+            height: 2px;
             background-color: $primary-color-dark;
             margin: auto 0;
           }
@@ -83,5 +85,11 @@
         }
       }
     }
+  }
+
+  .main-right {
+    height: 100%;
+    width: 60%;
+    padding: 100px 50px;
   }
 }
