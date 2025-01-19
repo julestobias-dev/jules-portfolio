@@ -1,8 +1,11 @@
-import Vue from 'vue'
-import App from './App.vue'
+import { createApp } from "vue";
+import App from "./App.vue";
+import "./assets/styles/main.scss";
+import { Icon } from "@iconify/vue";
 
-Vue.config.productionTip = false
+const app = createApp(App);
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+// eslint-disable-next-line vue/multi-word-component-names
+app.component("Icon", Icon);
+
+app.mount("#app");
