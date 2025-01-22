@@ -1,0 +1,77 @@
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  .exp-item {
+    display: flex;
+    gap: 50px;
+
+    .date-container {
+      min-width: 170px;
+
+      p {
+        color: $primary-color-dark;
+        font-size: 20px;
+        text-wrap: nowrap;
+        margin: 0;
+      }
+    }
+
+    .exp-details {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .exp-title-container {
+        display: flex;
+        text-wrap: nowrap;
+        flex-direction: column;
+        gap: 5px;
+
+        p {
+          color: $primary-color;
+          font-size: 20px;
+          margin: 0;
+        }
+
+        .icon {
+          color: $primary-color;
+        }
+      }
+
+      .exp-description {
+        p {
+          color: $primary-color-dark;
+          font-size: 16px;
+          //   font-weight: 600;
+        }
+      }
+
+      .exp-tech-list {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+
+        .exp-tech-item {
+          display: flex;
+          gap: 5px;
+          background-color: $secondary-color-dark;
+          padding: 5px 10px;
+          border-radius: 50px;
+          align-items: center;
+
+          p {
+            color: $secondary-color;
+            margin: 0;
+            font-size: 15px;
+          }
+
+          .tech-icon {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+}

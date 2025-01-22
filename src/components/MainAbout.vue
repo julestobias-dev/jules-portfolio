@@ -8,7 +8,7 @@
       Currently, I'm a
       <span class="highlighted">Software Engineering Specialist</span> focusing
       on Front End at
-      <span class="highlighted">Simple Trade Solutions Inc.</span> I contribute
+      <span class="highlighted">Simpletrade Solutions Inc.</span> I contribute
       to the creation and maintenance of UI components of the company's
       Ecommerce main website (dropify.ph) and the company's Customer website
       (sellers.dropify.ph). Ensuring our platform meets the needs of the

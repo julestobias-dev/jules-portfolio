@@ -39,11 +39,13 @@
 
 <script>
 import MainAbout from "./components/MainAbout.vue";
+import MainExperience from "./components/MainExperience.vue";
 
 export default {
   name: "App",
   components: {
     MainAbout,
+    MainExperience,
   },
   data() {
     return {
@@ -55,7 +57,7 @@ export default {
         },
         {
           label: "EXPERIENCE",
-          component: "experience",
+          component: "MainExperience",
         },
         {
           label: "PROJECTS",
@@ -72,6 +74,11 @@ export default {
           label: "LinkedIn",
           link: "https://www.linkedin.com/in/julestobias",
           icon: "mdi:linkedin",
+        },
+        {
+          label: "Code Pen",
+          link: "https://codepen.io/jules-dev",
+          icon: "la:codepen",
         },
       ],
     };
