@@ -2,7 +2,7 @@
   background-color: rgb(15 23 42);
   height: 100vh;
   display: flex;
-  padding: 0 100px;
+  // padding: 0 100px;
 
   .main-left {
     width: 40%;
@@ -88,8 +88,25 @@
   }
 
   .main-right {
-    height: 100%;
+    height: 100vh;
     width: 60%;
     padding: 100px 50px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $secondary-color-dark;
+      border-radius: 5px;
+      height: 10%;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $secondary-color;
+      }
+    }
   }
 }

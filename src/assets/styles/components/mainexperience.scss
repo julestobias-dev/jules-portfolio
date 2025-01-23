@@ -6,6 +6,13 @@
   .exp-item {
     display: flex;
     gap: 50px;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #94a3b81a;
+    }
 
     .date-container {
       min-width: 170px;

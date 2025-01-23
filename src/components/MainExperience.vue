@@ -122,6 +122,30 @@ export default {
           label: "Photoshop",
           icon: "mage:photoshop",
         },
+        {
+          label: "SQL",
+          icon: "ph:file-sql",
+        },
+        {
+          label: "Microsoft Excel",
+          icon: "file-icons:microsoft-excel",
+        },
+        {
+          label: "Google Productivity Tools",
+          icon: "logos:google-icon",
+        },
+        {
+          label: "JIRA",
+          icon: "mdi:jira",
+        },
+        {
+          label: "Tailwind",
+          icon: "flowbite:tailwind-solid",
+        },
+        {
+          label: "Figma",
+          icon: "solar:figma-bold-duotone",
+        },
       ],
 
       expList: [
@@ -191,7 +215,12 @@ export default {
           companyName: "JPMorgan Chase & Co.",
           workDescription:
             "Collaborated with Software Developers to establish an automation process for an account creation process which minimized the processing time per item and reduced the manual touch points resulting to team's higher accuracy and productivity. Maintained partnership with internal teams to ensure seamless process continuity",
-          techList: [],
+          techList: [
+            "SQL",
+            "Microsoft Excel",
+            "Google Productivity Tools",
+            "JIRA",
+          ],
         },
       ],
     };
