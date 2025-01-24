@@ -40,12 +40,14 @@
 <script>
 import MainAbout from "./components/MainAbout.vue";
 import MainExperience from "./components/MainExperience.vue";
+import MainProjects from "./components/MainProjects.vue";
 
 export default {
   name: "App",
   components: {
     MainAbout,
     MainExperience,
+    MainProjects,
   },
   data() {
     return {
@@ -61,7 +63,7 @@ export default {
         },
         {
           label: "PROJECTS",
-          component: "projects",
+          component: "MainProjects",
         },
       ],
       personalLinks: [
