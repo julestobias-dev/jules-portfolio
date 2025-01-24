@@ -3,6 +3,29 @@
   flex-direction: column;
   gap: 10px;
 
+  h3 {
+    color: $primary-color;
+    font-size: 28px;
+    text-wrap: nowrap;
+    display: none;
+
+    @include tablet {
+      display: flex;
+    }
+
+    @include lg-phone {
+      display: flex;
+    }
+
+    @include m-phone {
+      display: flex;
+    }
+
+    @include sm-phone {
+      display: flex;
+    }
+  }
+
   p {
     color: $primary-color-dark;
     font-size: 20px;

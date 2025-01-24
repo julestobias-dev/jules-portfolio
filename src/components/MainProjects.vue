@@ -1,5 +1,6 @@
 <template>
   <div class="projects-container">
+    <h3>Projects</h3>
     <div
       class="project-item"
       v-for="(project, index) in projectList"

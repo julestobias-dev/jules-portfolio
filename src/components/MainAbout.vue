@@ -1,5 +1,6 @@
 <template>
   <div class="about-container">
+    <h3>About</h3>
     <p>
       I'm a software engineer / web developer in the
       <span class="highlighted">Philippines</span>.

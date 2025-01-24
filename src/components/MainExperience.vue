@@ -1,5 +1,6 @@
 <template>
   <div class="experience-container">
+    <h3>Experience</h3>
     <div class="exp-item" v-for="(exp, index) in expList" :key="index">
       <div class="date-container">
         <p>{{ exp.date }}</p>

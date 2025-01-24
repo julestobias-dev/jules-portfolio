@@ -33,6 +33,12 @@
     </div>
     <div class="main-right">
       <component :is="activeComponent"></component>
+      <div class="mobile-exp-container">
+        <MainExperience />
+      </div>
+      <div class="mobile-projects-container">
+        <MainProjects />
+      </div>
     </div>
   </div>
 </template>

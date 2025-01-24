@@ -3,12 +3,36 @@
   flex-direction: column;
   gap: 50px;
 
+  h3 {
+    color: $primary-color;
+    font-size: 28px;
+    text-wrap: nowrap;
+    display: none;
+
+    @include tablet {
+      display: flex;
+    }
+
+    @include lg-phone {
+      display: flex;
+    }
+
+    @include m-phone {
+      display: flex;
+    }
+
+    @include sm-phone {
+      display: flex;
+    }
+  }
+
   .project-item {
     display: flex;
     gap: 50px;
     padding: 20px;
     border-radius: 5px;
     cursor: pointer;
+    flex-wrap: wrap;
 
     &:hover {
       background-color: #94a3b81a;
