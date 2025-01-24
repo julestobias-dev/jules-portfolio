@@ -4,6 +4,24 @@
   display: flex;
   // padding: 0 100px;
 
+  @include tablet {
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+  }
+
+  @include lg-phone {
+    flex-direction: column;
+  }
+
+  @include m-phone {
+    flex-direction: column;
+  }
+
+  @include sm-phone {
+    flex-direction: column;
+  }
+
   .main-left {
     width: 40%;
     height: 100%;
@@ -12,6 +30,38 @@
     align-items: center;
     padding: 100px 0;
     justify-content: space-between;
+
+    @include tablet {
+      width: 100%;
+      align-items: start;
+      padding: 100px 100px;
+      justify-content: start;
+      gap: 20px;
+    }
+
+    @include lg-phone {
+      width: 100%;
+      align-items: start;
+      padding: 100px 100px;
+      justify-content: start;
+      gap: 20px;
+    }
+
+    @include m-phone {
+      width: 100%;
+      align-items: start;
+      padding: 100px 40px;
+      justify-content: start;
+      gap: 20px;
+    }
+
+    @include sm-phone {
+      width: 100%;
+      align-items: start;
+      padding: 100px 40px;
+      justify-content: start;
+      gap: 20px;
+    }
 
     .left-top-section {
       width: 50%;
@@ -23,11 +73,21 @@
         h1 {
           color: $primary-color;
           font-size: 60px;
+          text-wrap: nowrap;
+
+          @include m-phone {
+            font-size: 40px;
+          }
+
+          @include sm-phone {
+            font-size: 40px;
+          }
         }
 
         h3 {
           color: $primary-color;
           font-size: 28px;
+          text-wrap: nowrap;
         }
       }
 
@@ -37,6 +97,22 @@
         color: $primary-color;
         font-weight: 600;
         gap: 20px;
+
+        @include tablet {
+          display: none;
+        }
+
+        @include lg-phone {
+          display: none;
+        }
+
+        @include m-phone {
+          display: none;
+        }
+
+        @include sm-phone {
+          display: none;
+        }
 
         .menu-wrapper {
           display: flex;
