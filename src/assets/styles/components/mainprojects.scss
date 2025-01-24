@@ -3,6 +3,22 @@
   flex-direction: column;
   gap: 50px;
 
+  @include tablet {
+    gap: 75px;
+  }
+
+  @include lg-phone {
+    gap: 75px;
+  }
+
+  @include m-phone {
+    gap: 75px;
+  }
+
+  @include sm-phone {
+    gap: 75px;
+  }
+
   h3 {
     color: $primary-color;
     font-size: 28px;
@@ -32,7 +48,30 @@
     padding: 20px;
     border-radius: 5px;
     cursor: pointer;
-    flex-wrap: wrap;
+
+    @include tablet {
+      flex-wrap: wrap;
+      padding: 0;
+      gap: 20px;
+    }
+
+    @include lg-phone {
+      flex-wrap: wrap;
+      padding: 0;
+      gap: 20px;
+    }
+
+    @include m-phone {
+      flex-wrap: wrap;
+      padding: 0;
+      gap: 20px;
+    }
+
+    @include sm-phone {
+      flex-wrap: wrap;
+      padding: 0;
+      gap: 20px;
+    }
 
     &:hover {
       background-color: #94a3b81a;

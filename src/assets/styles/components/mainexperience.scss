@@ -2,6 +2,24 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
+  width: 100%;
+  max-width: 100%;
+
+  @include tablet {
+    gap: 75px;
+  }
+
+  @include lg-phone {
+    gap: 75px;
+  }
+
+  @include m-phone {
+    gap: 75px;
+  }
+
+  @include sm-phone {
+    gap: 75px;
+  }
 
   h3 {
     color: $primary-color;
@@ -32,22 +50,29 @@
     padding: 20px;
     border-radius: 5px;
     cursor: pointer;
-    flex-wrap: wrap;
 
     @include tablet {
       padding: 0;
+      flex-wrap: wrap;
+      gap: 20px;
     }
 
     @include lg-phone {
       padding: 0;
+      flex-wrap: wrap;
+      gap: 20px;
     }
 
     @include m-phone {
       padding: 0;
+      flex-wrap: wrap;
+      gap: 20px;
     }
 
     @include sm-phone {
       padding: 0;
+      flex-wrap: wrap;
+      gap: 20px;
     }
 
     &:hover {
@@ -69,12 +94,14 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
+      width: 100%;
 
       .exp-title-container {
         display: flex;
-        text-wrap: nowrap;
+        // text-wrap: nowrap;
         flex-direction: column;
         gap: 5px;
+        width: 100%;
 
         p {
           color: $primary-color;
@@ -88,6 +115,7 @@
       }
 
       .exp-description {
+        width: 100%;
         p {
           color: $primary-color-dark;
           font-size: 16px;
@@ -99,6 +127,7 @@
         display: flex;
         gap: 10px;
         flex-wrap: wrap;
+        width: 100%;
 
         .exp-tech-item {
           display: flex;
