@@ -197,6 +197,42 @@ export default {
       projectList: [
         {
           imgURL:
+            "https://res.cloudinary.com/dmbjm2dpp/image/upload/v1744808234/history_today_axzmom.png",
+          link: "https://julestobias-dev.github.io/history-today/",
+          title: "History Today",
+          description:
+            "A mobile responsive personal project utilizing VueJS framework with integration of external API thru the use of Axios.",
+          techList: [
+            "VueJS",
+            "SASS",
+            "Virtual Studio",
+            "Github",
+            "Github Pages",
+            "Primevue",
+            "Cloudinary",
+            "Axios",
+            "Public API",
+          ],
+        },
+        {
+          imgURL:
+            "https://res.cloudinary.com/dmbjm2dpp/image/upload/v1744808007/portfolio_v2_mdx22b.png",
+          link: "https://julestobias-dev.github.io/jules-portfolio/",
+          title: "My Portfolio v2",
+          description:
+            "An updated portfolio website deployed in github pages built in 2025 applying my updated frontend developer skills set",
+          techList: [
+            "VueJS",
+            "SASS",
+            "Virtual Studio",
+            "Github",
+            "Github Pages",
+            "Primevue",
+            "Cloudinary",
+          ],
+        },
+        {
+          imgURL:
             "https://res.cloudinary.com/dmbjm2dpp/image/upload/v1737676651/e-commerce_abzmrk.png",
           link: "https://e-commerce-app-jtobias.vercel.app/",
           title: "E-commerce website",
