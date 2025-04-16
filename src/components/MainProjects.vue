@@ -211,7 +211,7 @@ export default {
             "Primevue",
             "Cloudinary",
             "Axios",
-            "Public API",
+            "Public APIs",
           ],
         },
         {
