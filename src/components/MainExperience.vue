@@ -211,7 +211,25 @@ export default {
           ],
         },
         {
-          date: "May 2019 - Apr 2023",
+          date: "Jun 2020 - Apr 2023",
+          jobTitle: "Developer (Contract-Based)",
+          companyName: "TrycanSoft",
+          workDescription:
+            "Design, develop, and maintain frontend components of web applicationboth desktop and mobile. Implement responsive use interface andcollaborate with Backend Developers to integrate frontend componentswith web sockets and API.",
+          techList: [
+            "NextJS",
+            "HTML",
+            "SASS",
+            "Tailwind",
+            "Javascript",
+            "IntelliJ",
+            "Webstorm",
+            "Gitlab",
+            "Photoshop",
+          ],
+        },
+        {
+          date: "Aug 2016 - Apr 2023",
           jobTitle: "Billing Associate",
           companyName: "JPMorgan Chase & Co.",
           workDescription:
